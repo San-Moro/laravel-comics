@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'general';
+header {
+    width: 100%;
+    height: $header-height;
+    background-color: white;
+    margin: 10px 0;
+    
+    .container {
+        position: relative;
+        
+        .logo-header {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .nav-header {
+            
+            position: absolute;
+            right: 0;
+
+            ul {
+                height: $header-height;    
+                display: flex;
+
+                li {
+                    margin: 0 15px;
+                    a {
+                        color: $secondary-color;
+                        font-size: 13px;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        line-height: 80px;
+                        display: inline-block;
+                        &.active {
+                            color: $primary-color;
+                            border-bottom: 2px solid $primary-color;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+
+    }
+}

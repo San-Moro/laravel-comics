@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content')  
     <h1>pagina comics</h1>
+    
 @endsection
